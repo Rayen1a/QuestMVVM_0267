@@ -48,5 +48,16 @@ fun FormSiswa(
     var txtGender by remember { mutableStateOf("")}
     val listData: MutableList<String> = mutableListOf(txtNama, txtGender, txtAlamat)
 
+    Scaffold(
+        modifier = modifier,
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(id = R.string.app_name), color = Color.White) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(id = R.color.purple_500))
+            )
+        }
+    ) { isiRuang ->
 
+
+    }
 }
